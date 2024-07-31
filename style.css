@@ -1,0 +1,805 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Start */
+header {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 40px;
+    background: #fae4f0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    /* Añade una sombra */
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.contactanos {
+    text-decoration: none;
+    color: #913333;
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.logo {
+    height: 80px;
+}
+
+/* Header End */
+
+/* Banner 1 Start */
+.container_1 {
+    width: 1280px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: #e6d0dc;
+    position: relative;
+    padding-top: 20vh;
+}
+
+.hero .container_1 {
+    height: 100%;
+    position: relative;
+}
+
+.hero .mid {
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero .mid .desc {
+    width: 40%;
+}
+
+h2 {
+    color: #913333;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 4rem;
+    line-height: 1.0;
+    margin-bottom: 30px;
+}
+
+.hero .mid .placeholder {
+    width: 65%;
+    height: 700px;
+    background-color: blue;
+    background-image: url(img/banner_1/mujer-haciendo-ropa.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px 0px 0 0;
+    box-shadow: 0 0 20px #21212130;
+}
+
+.cta {
+    margin-top: 30px;
+    padding: 0 50px;
+}
+
+.link1 {
+    color: #913333;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+
+}
+
+.sub_1 {
+    font-size: 1.3rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    line-height: 1.8rem;
+}
+
+/* Banner 1 End */
+
+/* Slider 1 Start */
+.title-slider {
+    text-align: center;
+    justify-content: center;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #913333;
+    padding-top: 5%;
+    background-color: #fae4f0;
+}
+
+.container_2 {
+    position: relative;
+    width: 100%;
+    background-color: #fae4f0;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 10px 20px;
+}
+
+.container_2 .swiper-container {
+    width: 100%;
+}
+
+.container_2 .swiper-slide {
+    font-size: 18px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: start;
+    box-shadow: 0px 4px 4px rgba(196, 196, 196, 0.25);
+
+}
+
+.container_2 .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+}
+
+.container_2 .swiper-slide .card-description {
+    padding: 1rem 1rem;
+}
+
+.container_2 .swiper-slide .card-title,
+.container .swiper-slide .card-text {
+    margin-bottom: .5rem;
+}
+
+.container_2 .swiper-slide .card-link {
+    text-align: center;
+
+}
+
+.container_2 .swiper-slide .card-link a {
+    text-decoration: none;
+    color: #1d6ce2;
+}
+
+.bx-chevron-left,
+.bx-chevron-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    font-size: 3rem;
+    /* background-color: transparent; */
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff;
+    transform: translate(0, -50%);
+    transition: .5s ease;
+    user-select: none;
+}
+
+.bx-chevron-left:hover,
+.bx-chevron-right:hover {
+    background: #333333d4;
+    color: #ffff;
+}
+
+.bx-chevron-left {
+    left: 10px;
+    z-index: 100;
+}
+
+.bx-chevron-right {
+    right: 10px;
+    z-index: 100;
+}
+
+/* Slider 2 End */
+
+/* Banner 2 Start */
+
+.inverted-radius {
+    --r: 25px;
+    /* the radius */
+    --s: 100px;
+    /* the size of the corner*/
+
+    width: 40rem;
+    aspect-ratio: 1;
+    background: #3FB8AF;
+    border-radius: var(--r);
+    --_m: /calc(2*var(--r)) calc(2*var(--r)) radial-gradient(#000 70%, #0000 72%) no-repeat;
+    mask:
+        calc(var(--s) + var(--r)) 0 var(--_m),
+        0 calc(var(--s) + var(--r)) var(--_m),
+        radial-gradient(var(--s) at 0 0, #0000 99%, #000 101%) var(--r) var(--r) no-repeat,
+        conic-gradient(at calc(var(--s) + 2*var(--r)) calc(var(--s) + 2*var(--r)),
+            #000 75%, #0000 0);
+
+    background-image: url(img/banner_2/banner_2_img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+.cta_2 {
+    padding: 10px 50px;
+    display: flex;
+    align-items: center;
+}
+
+.contactanos_2 {
+    color: #913333;
+    text-decoration: none;
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+
+}
+
+.bxl-whatsapp-square {
+    color: #913333;
+    font-size: 3rem;
+}
+
+/* Banner 2 End */
+
+/* Footer Start */
+footer {
+    background: #fae4f0;
+    height: 15rem;
+
+}
+
+.contenedor-footer {
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #913333;
+}
+
+.content-foo {
+    text-align: center;
+}
+
+.content-foo h4 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    color: #913333;
+    font-size: 1.4rem;
+    border-bottom: 3px solid #913333;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+    margin-top: 45px;
+}
+
+.content-foo p {
+    color: #913333;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+}
+
+.phone {
+    color: #913333;
+    text-decoration: none;
+}
+
+.social-media-logo a {
+    color: #913333;
+    font-size: 1.5rem;
+}
+
+
+.titulo-final {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    font-size: 18px;
+    margin: 20px 0 0 0;
+    color: #333333;
+}
+
+/* Footer End */
+/* Estilos para móviles pequeños */
+@media (max-width: 480px) {
+
+    /* Estilos específicos para móviles pequeños */
+    header {
+        position: relative;
+        width: 100%;
+        padding: 0.5rem 0.4rem;
+        z-index: 1000;
+    }
+    .contactanos {
+        text-decoration: none;
+        color: #913333;
+        font-size: 20px;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 700;
+        font-style: normal;
+    }
+
+    /* Banner 1 Start */
+    .hero {
+        padding-top: 7vh;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero .mid {
+        display: block;
+    }
+
+    .hero .mid .desc {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 2.8rem;
+        margin-bottom: 25px;
+
+    }
+
+    .sub_1 {
+        font-size: 1rem;
+    }
+
+    .cta {
+        margin-top: 15px;
+    }
+
+    .link1 {
+        font-size: 1.3rem;
+    }
+
+    .hero .mid .placeholder {
+        margin-top: 3rem;
+        width: 100%;
+        height: 400px;
+    }
+
+    /* Banner 1 End */
+
+    /* Slider title Start */
+    .title-slider{
+        display: none;
+    }
+    /* Slider title End */
+
+    /* Img banner 2 Start */
+    .inverted-radius {
+        margin-top: 10px;
+        width: 95%;
+        height: 23rem;
+    }
+    .cta_2 {
+        display: flex;
+        text-align: center;
+        justify-content: center;    }
+    /* Img banner 2 End */
+
+    /* Footer Start */
+    footer {
+        height: 16rem;
+    }
+
+    .contenedor-footer {
+        width: 90%;
+        padding-bottom: 50px;
+    }
+
+    .email {
+        display: none;
+    }
+
+    .content-foo h4 {
+        font-size: 1.5rem;
+    }
+
+    .content-foo p {
+        font-size: 1rem;
+    }
+
+    .social-media-logo a {
+        font-size: 1.4rem;
+    }
+
+    .titulo-final {
+        font-size: 0.8rem;
+        margin: 20px 20px 0 0;
+    }
+}
+
+
+
+/* Estilos para móviles grandes */
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        position: relative;
+        /* width: 100%; */
+        padding: 0.5rem 0.4rem;
+        z-index: 1000;
+    }
+    
+    /* Banner 1 Start */
+    .hero {
+        padding-top: 7vh;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero .mid {
+        display: block;
+    }
+
+    .hero .mid .desc {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 2.4rem;
+        margin-bottom: 25px;
+
+    }
+
+    .sub_1 {
+        font-size: 1rem;
+    }
+
+    .cta {
+        margin-top: 15px;
+    }
+
+    .link1 {
+        font-size: 1.3rem;
+    }
+
+    .hero .mid .placeholder {
+        margin-top: 2rem;
+        width: 100%;
+        height: 400px;
+    }
+
+    /* Banner 1 End */
+
+  
+
+    /* Img banner 2 Start */
+    .inverted-radius {
+        margin-top: 10px;
+        width: 95%;
+        height: 23rem;
+    }
+    .cta_2 {
+        display: flex;
+        text-align: center;
+        justify-content: center;    }
+    /* Img banner 2 End */
+
+    /* Footer Start */
+    footer {
+        height: 16rem;
+    }
+
+    .contenedor-footer {
+        width: 90%;
+        padding-bottom: 50px;
+    }
+
+    .email {
+        display: none;
+    }
+
+    .content-foo h4 {
+        font-size: 1.5rem;
+    }
+
+    .content-foo p {
+        font-size: 1rem;
+    }
+
+    .social-media-logo a {
+        font-size: 1.4rem;
+    }
+
+    .titulo-final {
+        font-size: 0.8rem;
+        margin: 20px 20px 0 0;
+    }
+
+}
+
+
+
+
+/* Estilos para tabletas */
+@media (min-width: 768px) and (max-width: 1024px) {
+    /* Estilos específicos para tabletas */
+
+    header {
+        position: relative;
+        /* width: 100%; */
+        padding: 0.5rem 0.4rem;
+        z-index: 1000;
+    }
+    
+    /* Banner 1 Start */
+    .hero {
+        padding-top: 7vh;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero .mid {
+        display: block;
+    }
+
+    .hero .mid .desc {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 3.4rem;
+        margin-bottom: 25px;
+
+    }
+
+    .sub_1 {
+        font-size: 1.5rem;
+    }
+
+    .cta {
+        margin-top: 20px;
+    }
+
+    .link1 {
+        font-size: 2rem;
+    }
+
+    .hero .mid .placeholder {
+        margin-top: 5rem;
+        width: 100%;
+        height: 600px;
+    }
+
+    /* Banner 1 End */
+
+    /* Slider title Start */
+    .title-slider{
+        font-size: 4rem;
+        z-index: 100;
+        /* display: none; */
+    }
+    .container_2 { 
+        min-height: 55vh;  
+    }
+    /* Slider title End */
+
+    /* Img banner 2 Start */
+    .inverted-radius {
+        margin-top: 60px;
+        width: 95%;
+        height: 35rem;
+    }
+    .cta_2 {
+        margin-top: 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center;  
+     }
+    /* Img banner 2 End */
+
+    /* Footer Start */
+    footer {
+        height: 16rem;
+    }
+
+    .contenedor-footer {
+        width: 90%;
+        padding-bottom: 50px;
+    }
+
+
+
+    .content-foo h4 {
+        font-size: 1.3rem;
+    }
+
+    .content-foo p {
+        font-size: 1rem;
+    }
+
+    .social-media-logo a {
+        font-size: 1.4rem;
+    }
+
+    .titulo-final {
+        font-size: 1.2rem;
+        margin: 20px 20px 0 0;
+    }
+
+}
+
+/* Estilos para tabletas grandes */
+@media (min-width: 1025px) and (max-width: 1280px) {
+    /* Estilos específicos para tabletas grandes */
+    header {
+        position: relative;
+        /* width: 100%; */
+        padding: 0.5rem 0.4rem;
+        z-index: 1000;
+    }
+    
+    /* Banner 1 Start */
+    .hero {
+        padding-top: 7vh;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero .mid {
+        display: block;
+    }
+
+    .hero .mid .desc {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 3.4rem;
+        margin-bottom: 25px;
+
+    }
+
+    .sub_1 {
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+
+    .cta {
+        margin-top: 20px;
+    }
+
+    .link1 {
+        font-size: 3rem;
+    }
+
+    .hero .mid .placeholder {
+        margin-top: 6rem;
+        width: 100%;
+        height: 600px;
+    }
+
+    /* Banner 1 End */
+
+    /* Slider title Start */
+    .title-slider{
+        font-size: 4rem;
+        z-index: 100;
+        /* display: none; */
+    }
+    .container_2 { 
+        min-height: 55vh;  
+    }
+    /* Slider title End */
+
+    /* Img banner 2 Start */
+    .inverted-radius {
+        margin-top: 60px;
+        width: 95%;
+        height: 40rem;
+    }
+    .cta_2 {
+        margin-top: 10px;
+        display: flex;
+        text-align: center;
+        justify-content: center;  
+     }
+    /* Img banner 2 End */
+
+    /* Footer Start */
+    footer {
+        height: 16.8rem;
+    }
+
+    .contenedor-footer {
+        width: 90%;
+        padding-bottom: 50px;
+    }
+
+
+
+    .content-foo h4 {
+        font-size: 1.7rem;
+    }
+
+    .content-foo p {
+        font-size: 1.3rem;
+    }
+
+    .social-media-logo a {
+        font-size: 1.9rem;
+    }
+
+    .titulo-final {
+        font-size: 1.6rem;
+        margin: 20px 25px 0 0;
+    }
+
+}
+
+/* Estilos para pantallas de escritorio y laptops */
+@media (min-width: 1281px) and (max-width: 1920px) {
+    /* Estilos específicos para pantallas de escritorio y laptops */
+}
+
+/* Estilos para pantallas grandes de escritorio */
+@media (min-width: 1921px) {
+    /* Estilos específicos para pantallas grandes de escritorio */
+}
+
+/* Responsive  Start*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive End */
