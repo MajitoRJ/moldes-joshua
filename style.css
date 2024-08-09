@@ -113,6 +113,19 @@ h2 {
 
 }
 
+.cta :hover {
+    background-color: #913333;
+    height: 2.5rem;
+    width: 3rem;
+    padding: 5px 5px;
+    border-radius: 5px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor a una mano cuando se pasa sobre el botón */
+    transition: background-color 0.3s;
+    color: white;
+}
+
 .sub_1 {
     font-size: 1.3rem;
     font-family: "Montserrat", sans-serif;
@@ -130,6 +143,7 @@ h2 {
     justify-content: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
+    font-size: 4rem;
     color: #913333;
     padding-top: 5%;
     background-color: #fae4f0;
@@ -145,8 +159,8 @@ h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 10px 20px;
+    min-height: 80vh;
+    padding: 10px 40px;
 }
 
 .container_2 .swiper-container {
@@ -154,6 +168,9 @@ h2 {
 }
 
 .container_2 .swiper-slide {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
     font-size: 18px;
     background: #fff;
     border-radius: 15px;
@@ -173,23 +190,28 @@ h2 {
 }
 
 .container_2 .swiper-slide .card-description {
+    height: 9rem;
     padding: 1rem 1rem;
 }
 
-.container_2 .swiper-slide .card-title,
+/* .container_2 .swiper-slide .card-title,
 .container .swiper-slide .card-text {
-    margin-bottom: .5rem;
-}
+    margin-bottom: 1rem;
+} */
 
 .container_2 .swiper-slide .card-link {
     text-align: center;
+    margin-top: 1rem;
 
 }
 
 .container_2 .swiper-slide .card-link a {
     text-decoration: none;
-    color: #1d6ce2;
+    color: #5f0000;
 }
+
+
+
 
 .bx-chevron-left,
 .bx-chevron-right {
@@ -197,22 +219,22 @@ h2 {
     position: absolute;
     top: 50%;
     font-size: 3rem;
-    /* background-color: transparent; */
     border-radius: 50%;
     padding: 5px;
     font-weight: 600;
     cursor: pointer;
+    background: #333333d4;
     color: #ffffff;
     transform: translate(0, -50%);
     transition: .5s ease;
     user-select: none;
 }
 
-.bx-chevron-left:hover,
+/* .bx-chevron-left:hover,
 .bx-chevron-right:hover {
-    background: #333333d4;
+   
     color: #ffff;
-}
+} */
 
 .bx-chevron-left {
     left: 10px;
@@ -343,6 +365,7 @@ footer {
         padding: 0.5rem 0.4rem;
         z-index: 1000;
     }
+
     .contactanos {
         text-decoration: none;
         color: #913333;
@@ -395,9 +418,10 @@ footer {
     /* Banner 1 End */
 
     /* Slider title Start */
-    .title-slider{
+    .title-slider {
         display: none;
     }
+
     /* Slider title End */
 
     /* Img banner 2 Start */
@@ -406,10 +430,13 @@ footer {
         width: 95%;
         height: 23rem;
     }
+
     .cta_2 {
         display: flex;
         text-align: center;
-        justify-content: center;    }
+        justify-content: center;
+    }
+
     /* Img banner 2 End */
 
     /* Footer Start */
@@ -450,11 +477,10 @@ footer {
 @media (min-width: 481px) and (max-width: 768px) {
     header {
         position: relative;
-        /* width: 100%; */
         padding: 0.5rem 0.4rem;
         z-index: 1000;
     }
-    
+
     /* Banner 1 Start */
     .hero {
         padding-top: 7vh;
@@ -496,7 +522,16 @@ footer {
 
     /* Banner 1 End */
 
-  
+    .container_2 .swiper-slide .card-link {
+        text-align: center;
+        margin-top: .5rem;
+    
+    }
+    
+
+    .hro1 {
+        height: 80vh;
+    }
 
     /* Img banner 2 Start */
     .inverted-radius {
@@ -504,10 +539,13 @@ footer {
         width: 95%;
         height: 23rem;
     }
+
     .cta_2 {
         display: flex;
         text-align: center;
-        justify-content: center;    }
+        justify-content: center;
+    }
+
     /* Img banner 2 End */
 
     /* Footer Start */
@@ -552,13 +590,13 @@ footer {
 
     header {
         position: relative;
-        /* width: 100%; */
         padding: 0.5rem 0.4rem;
         z-index: 1000;
     }
-    
+
     /* Banner 1 Start */
     .hero {
+        height: 100%;
         padding-top: 7vh;
         text-align: center;
         justify-content: center;
@@ -599,28 +637,35 @@ footer {
     /* Banner 1 End */
 
     /* Slider title Start */
-    .title-slider{
-        font-size: 4rem;
-        z-index: 100;
+    .title-slider {
+        font-size: 4.6rem;
         /* display: none; */
     }
-    .container_2 { 
-        min-height: 55vh;  
+    .container_2 .swiper-slide .card-link {
+        text-align: center;
+        margin-top: 0.1rem;
+    
     }
+    
     /* Slider title End */
 
     /* Img banner 2 Start */
-    .inverted-radius {
-        margin-top: 60px;
-        width: 95%;
-        height: 35rem;
+    .hro1 {
+        height: 85vh;
     }
+    .inverted-radius {
+        margin-top: 50px;
+        width: 95%;
+        height: 25rem;
+    }
+
     .cta_2 {
         margin-top: 10px;
         display: flex;
         text-align: center;
-        justify-content: center;  
-     }
+        justify-content: center;
+    }
+
     /* Img banner 2 End */
 
     /* Footer Start */
@@ -656,6 +701,7 @@ footer {
 
 /* Estilos para tabletas grandes */
 @media (min-width: 1025px) and (max-width: 1280px) {
+
     /* Estilos específicos para tabletas grandes */
     header {
         position: relative;
@@ -663,7 +709,7 @@ footer {
         padding: 0.5rem 0.4rem;
         z-index: 1000;
     }
-    
+
     /* Banner 1 Start */
     .hero {
         padding-top: 7vh;
@@ -707,14 +753,22 @@ footer {
     /* Banner 1 End */
 
     /* Slider title Start */
-    .title-slider{
+    .title-slider {
         font-size: 4rem;
         z-index: 100;
         /* display: none; */
     }
-    .container_2 { 
-        min-height: 55vh;  
+
+    .container_2 {
+        min-height: 60vh;
     }
+    .container_2 .swiper-slide .card-link {
+        text-align: center;
+        margin-top: 0.2rem;
+    
+    }
+    
+
     /* Slider title End */
 
     /* Img banner 2 Start */
@@ -723,12 +777,14 @@ footer {
         width: 95%;
         height: 40rem;
     }
+
     .cta_2 {
         margin-top: 10px;
         display: flex;
         text-align: center;
-        justify-content: center;  
-     }
+        justify-content: center;
+    }
+
     /* Img banner 2 End */
 
     /* Footer Start */
